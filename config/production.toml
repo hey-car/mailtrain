@@ -1,0 +1,9 @@
+[mysql]
+host="mysql"
+
+[redis]
+host="redis"
+enabled=true
+
+[www]
+port=7000

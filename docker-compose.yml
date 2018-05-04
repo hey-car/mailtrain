@@ -1,0 +1,20 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=mailtrain
+      - MYSQL_DATABASE=mailtrain
+      - MYSQL_USER=mailtrain
+      - MYSQL_PASSWORD=mailtrain
+    ports:
+      - "3306:3306"
+  redis:
+    image: redis:3.0
+  mailtrain:
+    image: heycar/mailtrain:0.0.0
+    ports:
+      - "7000:7000"
+    depends_on:
+      - redis
+      - mysql
