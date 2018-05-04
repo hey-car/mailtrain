@@ -1,6 +1,6 @@
 DOCKER_BIN ?= `which docker`
 DOCKER_COMPOSE ?= `which docker-compose`
-TAG ?= "heycar/mailtrain:0.0.0"
+TAG ?= "heycar/mailtrain:0.1.0"
 
 .PHONY: build
 build:
