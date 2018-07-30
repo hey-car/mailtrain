@@ -16,3 +16,5 @@ mailtrain will be available at `127.0.0.1:7000`.
 Remember to update the tag in the `Makefile`, use the same tag for git.
 
 Then, run: `make release`, which will `build` and `push` the new docker image to dockerhub.
+
+More info: http://github.com/mailtrain-org/mailtrain
